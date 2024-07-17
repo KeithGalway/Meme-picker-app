@@ -1,0 +1,168 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+body {
+    font-family: 'Karla', sans-serif;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 500px;
+    margin: 20px auto 0;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #eed6d3;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+h3 {
+    margin: 25px;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #67595e;
+    padding-top: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header__img {
+    width: 80px;
+}
+
+/* LIST */
+
+.main__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__radios {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 4px 8px;
+}
+
+.radio:last-child {
+    border-bottom: none;
+}
+
+.radio__label {
+    font-size: 0.9em;
+    padding: 3px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: #fff0ee;
+    color: #bd301d;
+    font-weight: bold;
+}
+
+.main__gifs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px;
+}
+
+.main__btn {
+    padding: 15px 25px;
+    font-size: 24px;
+    color: #eed6d3;
+    background-color: #67595e;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* MODAL */
+
+.main__modal {
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 80px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #67595e;
+    border-radius: 5px;
+    width: 420px;
+    height: 490px;
+    background-color: #fff0ee;
+}
+
+.cat-img {
+    max-width: 340px;
+    max-height: 420px;
+    border-radius: 5px;
+}
+
+.modal__btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+}
+
+.modal__btn:hover {
+    color: white;
+    background-color: #bd301d;
+    border: 2px solid #bd301d;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meme Picker</title>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <img
+                    src="./assets/pumpkin.png"
+                    alt="Image of Pumpkin"
+                    class="header__img"
+                />
+                <div class="header__hgroup">
+                    <h2 class="header__caption">Pumpkin's Purrfect...</h2>
+                    <h1 class="header__heading">Meme Picker</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            <h3 class="main__heading">Select Your Current Emotion</h3>
+            <div class="main__list">
+                <div class="main__radios" id="emotion-radios"></div>
+                <div class="main__gifs">
+                    <label for="gifs-only-option" class="gifs__label">Animated GIFs only</label>
+                    <input type="checkbox" id="gifs-only-option" />
+                </div>
+                <button class="main__btn" id="get-image-btn">Get Image</button>
+            </div>
+        </main>
+        <div class="main__modal" id="meme-modal">
+            <button class="modal__btn" id="meme-modal-close-btn">X</button>
+            <div id="meme-modal-inner"></div>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
